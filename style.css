@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightgray;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+}
+
+.container {
+  width: 520px;
+  height: 360px;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.screen {
+  width: 90%;
+  height: 300px;
+  /* margin-top: -20px; */
+  background: rgb(73, 73, 73);
+}
+
+iframe {
+  margin-top: -20px;
+  display: none;
+}
+
+button {
+  padding: 14px 24px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background: black;
+}
+
+.plugin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 650px;
+  animation: plug 1s linear;
+}
+
+.fa-plug {
+  font-size: 24px;
+  color: black;
+  margin-bottom: -2px;
+}
+
+.cable {
+  height: 40px;
+  width: 2.5px;
+  background: black;
+  z-index: -1;
+}
+
+.tv-name {
+  color: white;
+  margin-top: 8px;
+}
+
+@keyframes plug {
+  0% {
+    top: 678px;
+  }
+  100% {
+    top: 650px;
+  }
+}
