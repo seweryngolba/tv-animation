@@ -31,7 +31,10 @@ body {
   height: 264px;
   margin-top: -20px;
   background: rgb(73, 73, 73);
-  animation: watch 0.6s ease 1;
+}
+
+.anime2 {
+  animation: watch 2s ease 1;
 }
 
 iframe {
@@ -72,8 +75,21 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 650px;
-  animation: plug 1s ease;
+  top: 689px;
+}
+
+.anime1 {
+  animation: plug 1s linear;
+  top: 661px;
+}
+
+.anime3 {
+  animation: plugout 1s linear;
+  top: 689px;
+}
+
+.anime4 {
+  animation: watchout 1s ease 1;
 }
 
 .fa-plug {
@@ -111,10 +127,19 @@ button {
 
 @keyframes plug {
   0% {
-    top: 678px;
+    top: 689px;
   }
   100% {
-    top: 650px;
+    top: 661px;
+  }
+}
+
+@keyframes plugout {
+  0% {
+    top: 661px;
+  }
+  100% {
+    top: 689px;
   }
 }
 
@@ -124,5 +149,14 @@ button {
   }
   to {
     transform: scale(1);
+  }
+}
+
+@keyframes watchout {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(-1);
   }
 }
