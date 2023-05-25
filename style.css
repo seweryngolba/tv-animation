@@ -17,25 +17,37 @@ body {
 }
 
 .container {
+  position: relative;
   width: 520px;
   height: 360px;
   background: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .screen {
-  width: 90%;
-  height: 300px;
-  /* margin-top: -20px; */
+  position: absolute;
+  top: 48px;
+  left: 38px;
+  width: 444px;
+  height: 264px;
+  margin-top: -20px;
   background: rgb(73, 73, 73);
+  animation: watch 0.6s ease 1;
 }
 
 iframe {
-  margin-top: -20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: none;
+}
+
+.giphy {
   display: none;
+  width: 444px;
+  padding-bottom: 264px;
+  position: absolute;
+  top: 28px;
+  left: 38px;
 }
 
 button {
@@ -61,7 +73,7 @@ button {
   align-items: center;
   flex-direction: column;
   top: 650px;
-  animation: plug 1s linear;
+  animation: plug 1s ease;
 }
 
 .fa-plug {
@@ -78,8 +90,23 @@ button {
 }
 
 .tv-name {
+  position: absolute;
+  bottom: 15px;
+  left: 238px;
+  font-size: 32px;
   color: white;
-  margin-top: 8px;
+  margin-top: 46px;
+  background: linear-gradient(
+    to bottom,
+    #bec0c2 24%,
+    #b3b6b5 26%,
+    #70706f 28%,
+    #8e8d8d 29%,
+    #7d7d7a 45%,
+    #70706f 65%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes plug {
@@ -88,5 +115,14 @@ button {
   }
   100% {
     top: 650px;
+  }
+}
+
+@keyframes watch {
+  from {
+    transform: scale(-1);
+  }
+  to {
+    transform: scale(1);
   }
 }
