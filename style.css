@@ -75,17 +75,17 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 689px;
+  top: 545px;
 }
 
 .anime1 {
   animation: plug 1s linear;
-  top: 661px;
+  top: 517px;
 }
 
 .anime3 {
   animation: plugout 1s linear;
-  top: 689px;
+  top: 545px;
 }
 
 .anime4 {
@@ -128,19 +128,19 @@ button {
 
 @keyframes plug {
   0% {
-    top: 689px;
+    top: 545px;
   }
   100% {
-    top: 661px;
+    top: 517px;
   }
 }
 
 @keyframes plugout {
   0% {
-    top: 661px;
+    top: 517px;
   }
   100% {
-    top: 689px;
+    top: 545px;
   }
 }
 
@@ -161,3 +161,34 @@ button {
     transform: scale(-1);
   }
 }
+
+/* @media screen and (min-width: 1025px) {
+  @keyframes plug {
+    0% {
+      top: 689px;
+    }
+    100% {
+      top: 661px;
+    }
+  }
+
+  @keyframes plugout {
+    0% {
+      top: 661px;
+    }
+    100% {
+      top: 689px;
+    }
+  }
+  .icons {
+    top: 661px;
+  }
+
+  .anime1 {
+    top: 661px;
+  }
+
+  .anime3 {
+    top: 689px;
+  }
+} */
